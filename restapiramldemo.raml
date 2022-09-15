@@ -1,6 +1,10 @@
 #%RAML 1.0
 title: RestApiRamlDemo
 
+types:
+  Account: !include DataTypes/Account.raml
+
+  
 /customers:
   get:
     queryParameters:
@@ -17,3 +21,5 @@ title: RestApiRamlDemo
     responses:
       200:
         body:
+          application/json:
+            type: Account[]
