@@ -4,7 +4,6 @@ title: RestApiRamlDemo
 types:
   Account: !include DataTypes/Account.raml
   AccountTypeEnum: !include DataTypes/AccountTypeValues.raml
-  AccountCollectionResponse: !include Exmaples/AccountCollection.raml
 
 /customers:
   get:
@@ -25,4 +24,4 @@ types:
           application/json:
             type: Account[]
             examples:
-              output: AccountCollectionResponse
+              output: !include /Examples/AccountCollection.raml
