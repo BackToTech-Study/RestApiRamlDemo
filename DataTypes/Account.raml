@@ -1,15 +1,7 @@
 #%RAML 1.0 DataType
 
-type: object
 properties:
   ID: 
     type: integer
     minimum: 1
-  Name: string
-  Type: !include AccountTypeValues.raml
-  Address: 
-    type: string
-  AirMiles:
-    type: integer
-    minimum: 0
-  CreationDate: datetime-only
+type: Account
