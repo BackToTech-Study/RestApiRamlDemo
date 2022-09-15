@@ -1,15 +1,12 @@
 #%RAML 1.0 DataType
 
-types:
-  AccountTypeEnum: !include DataTypes/AccountTypeValues.raml
-
 type: object
 properties:
   ID: 
     type: integer
     minimum: 1
   Name: string
-  Type: /DataTypes/AccountTypeValues.raml
+  Type: !include AccountTypeValues.raml
   Address: 
     type: string
   AirMiles:
