@@ -4,10 +4,12 @@ type: object
 properties:
   ID: 
     type: integer
-    minimum
+    minimum: 0
   Name: string
   Type: AccountTypeValues.raml
-  Address: string
+  Address:
+    type: string
+    pattern: 
   AirMiles:
     type: integer
     minimum: 0
