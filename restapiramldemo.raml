@@ -3,6 +3,7 @@ title: RestApiRamlDemo
 
 types:
   Account: !include DataTypes/Account.raml
+  AccountCreatePayload: !include DataTypes/AccountNoID.raml
   AccountTypeEnum: !include DataTypes/AccountTypeValues.raml
 
 /customers:
@@ -28,4 +29,4 @@ types:
   post:
     body:
       application/json:
-        type: 
+        type: AccountCreatePayload
