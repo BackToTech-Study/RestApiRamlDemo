@@ -2,10 +2,13 @@
 
 type: object
 properties:
-  ID: integer
+  ID: 
+    type: integer
+    minimum
   Name: string
   Type: AccountTypeValues.raml
   Address: string
-  AirMiles: integer
-    min
+  AirMiles:
+    type: integer
+    minimum: 0
   CreationDate: datetime-only
