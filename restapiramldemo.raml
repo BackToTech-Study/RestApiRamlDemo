@@ -3,8 +3,8 @@ title: RestApiRamlDemo
 
 types:
   Account: !include DataTypes/Account.raml
+  AccountTypeEnum: !include DataTypes/AccountTypeValues.raml
 
-  
 /customers:
   get:
     queryParameters:
@@ -14,7 +14,7 @@ types:
         example: "Jhon"
       accountType:
         required: false
-        type: !include DataTypes/AccountTypeValues.raml
+        type: AccountTypeEnum
       customerName:
         required: false
         type: string
