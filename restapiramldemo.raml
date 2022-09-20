@@ -38,10 +38,17 @@ types:
           application/json:
             example:
               message: Accounts created
-  /{ID}
+  /{ID}:
     get:
-      uriParameters:
+      queryParameters:
         requester:
           required: true
           type: string
           example: "Jhon"
+        responses:
+    200:
+      body:
+        application/json:
+          type: Account[]
+            examples:
+              output: !include /Examples/AccountCollection.raml
