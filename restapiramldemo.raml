@@ -45,10 +45,10 @@ types:
           required: true
           type: string
           example: "Jhon"
-        responses:
-    200:
-      body:
-        application/json:
-          type: Account[]
-            examples:
-              output: !include /Examples/AccountCollection.raml
+      responses:
+        200:
+          body:
+            application/json:
+              type: Account[]
+              examples:
+                output: !include /Examples/AccountCollection.raml
