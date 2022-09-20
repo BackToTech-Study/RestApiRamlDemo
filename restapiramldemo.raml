@@ -40,3 +40,8 @@ types:
               message: Accounts created
   /{ID}
     get:
+      uriParameters:
+        requester:
+          required: true
+          type: string
+          example: "Jhon"
